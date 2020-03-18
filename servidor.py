@@ -107,7 +107,6 @@ class Servidor:
               
                   
         except ConnectionClosedError as ex:
-            #self.conectados.remove(ws)
             print("Error: ", ex)
             
             
