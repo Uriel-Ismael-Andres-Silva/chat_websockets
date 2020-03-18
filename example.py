@@ -22,7 +22,6 @@ class Server:
         while True:    
             data_msg=msg.getAllMessages()
             cola.put(data_msg)
-            #print("dentro de funcion mensajes: ",cola.get())
 
             sleep(5)
   
