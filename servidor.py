@@ -108,8 +108,7 @@ class Servidor:
                   
         except ConnectionClosedError as ex:
             print("Error: ", ex)
-            
-            
+                 
     async def verify_and_register_websocket(self,ws):
         if len(self.conectados)==0:
             self.conectados.append(ws)
