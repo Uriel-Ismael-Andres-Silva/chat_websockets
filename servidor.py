@@ -125,9 +125,6 @@ class Servidor:
                 self.data_ws.append(data)
 
 
-servidor = Servidor()
-loop = asyncio.get_event_loop()
-asyncio.run_coroutine_threadsafe(servidor.getFilterMessages(), loop)
 
 on_server = websockets.serve(servidor.main, '192.168.0.179', 8000)
 loop.run_until_complete(on_server)
